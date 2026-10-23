@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="trab htmal.css">
+<head>
+    <title>Candidadura Online</title>
+</head>
+
+<body>
+    <style>
+        ```css
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background: linear-gradient(135deg, #eaf1fb, #dce6f5);
+    color: #1e293b;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.Formulario {
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.10);
+}
+
+.Formulario h1 {
+    color: #174ea6;
+    font-size: 28px;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.Formulario h3 {
+    color: #64748b;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+fieldset {
+    border: 1px solid #d8e1ee;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #fcfdff;
+}
+
+legend {
+    color: #174ea6;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0 10px;
+}
+
+label {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 12px 15px 12px 0;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 200px;
+}
+
+input,
+select {
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    background-color: #ffffff;
+    color: #1e293b;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #174ea6;
+    box-shadow: 0 0 0 3px rgba(23, 78, 166, 0.12);
+}
+
+input[type="file"] {
+    padding: 8px;
+    font-size: 12px;
+}
+.Formulario button {
+    padding: 13px 25px;
+    margin: 5px 10px 0 0;
+    border: none;
+    border-radius: 7px;
+    background-color: #174ea6;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Formulario button:hover {
+    background-color: #123b7a;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(23, 78, 166, 0.2);
+}
+
+.Formulario button:last-of-type {
+    background-color: #ffffff;
+    color: #334155;
+    border: 1px solid #cbd5e1;
+}
+
+.Formulario button:last-of-type:hover {
+    background-color: #f1f5f9;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px 10px;
+    }
+
+    .Formulario {
+        padding: 22px 16px;
+    }
+
+    .Formulario h1 {
+        font-size: 22px;
+    }
+    fieldset {
+        padding: 15px;
+    }
+    label {
+        display: flex;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .Formulario button {
+        width: 100%;
+        margin: 6px 0;
+    }
+}
+    </style>
+    <form class="Formulario">
+        <h1> CV4 em Técnico de Suporte Informático - TSI03</h1>
+        <h3>Preencha o formulario abaixo</h3>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="nome">Nome:
+                <input type="text" name="nome">
+            </label>
+
+            <label for="apelido">Apelido:
+                <input type="text" name="apelido">
+            </label><br>
+
+            <label for="nascimento">Nascimento:
+                <input type="date" name="nascimento">
+            </label> <br>
+
+            <label for="RG">RG:
+                <input type="text" name="RG">
+            </label> <br>
+
+            <label for="CP">CP:
+                <input type="text" name="CP"><span>-</span><input type="text" >
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Ddos de Endereço</legend>
+
+            <label for="rua">Rua:
+                <input type="text" name="rua">
+            </label>
+            <label for="numero">Numero:
+                <input type="text" name="numero">
+            </label><br>
+
+            <label for="bairro">Bairro:
+                <input type="text" name="Bairro">
+            </label><br>
+
+            <label for="distrito">Distrito:
+                <select name="distrito">
+                    <option>Matola</option>
+                    <option>Boane</option>
+                    <option>Magude</option>
+                    <option>Manhiça</option>
+                    <option>Marracuene</option>
+                    <option>Matutuine</option>
+                    <option>Moanba</option>
+                    <option>Namaacha</option>
+                </select>
+            </label><br>
+            <label for="cidade">Cidade:
+                <input type="text" name="cidade">
+            </label><br>
+            <label for="cep">CEP:
+                 <input type="text" name="cep"><span>-</span><input type="text" >
+            </label>       
+        </fieldset>
+
+        <fieldset>
+            <legend>Dados de Login</legend>
+
+            <label for="e-mail">Email:
+                <input type="email" name="email">
+            </label><br>
+
+            <label for="imagen de perfil">Imagen de perfil
+                <input type="file" name="imagen de perfil">
+            </label><br>
+
+            <label for="login">Login de usuario:
+                <input type="text" name="login">
+            </label><br>
+
+            <label for="senha">Senha:
+                <input type="text" name="Senha">
+            </label><br>
+
+            <label for="confirme a senha">Confirme a Senha:
+                <input type="text" name="confirme a senha">
+            </label>
+        </fieldset>
+
+        <button> <input type="submit"></button>
+        <button ><input type="reset"></button>
+        
+        <script>
+            
+        </script>
+
+
+
+    </form>
+
+</body>
